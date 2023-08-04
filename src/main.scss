@@ -1,4 +1,33 @@
-$primary: #BA4A00;
+$primary: #ff811d;
+$link-color: #ff1d9b;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// nav {
+//     display: flex;
+//     justify-content: end;
+//     display: inline-block;
+// }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.container {
+    height: 8em;
+
+}
+
+// .naviGate > ul {
+//     // height: 3rem;
+// }
+
+
+

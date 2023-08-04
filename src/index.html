@@ -7,17 +7,52 @@
     <title>Nate Whiting's Full Stacker Portfolio</title>
 </head>
 <body>
-    <div class="container-{breakpoint}">
-        <div class="row">
-            <nav class="naviGate col-sm-12">
+    <div class="container-{breakpoint} bg-primary d-flex align-items-end justify-content-end p-2">
+        <nav class="navbar navbar-expand-md col-sm-12">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item coderWho">
+                    <a class="nav-link active" aria-current="page" href="#">Coder Intel</a>
+                  </li>
+                  <li class="nav-item projects">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item contactInfo">
+                    <a class="nav-link">Contact Intel</a>
+                  </li>
+                  <li class="nav-item resumeWorx">
+                    <a class="nav-link">Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- <div class="row">
+            <div class="col bg-success">
+              One of three columns
+            </div>
+            <div class="col bg-primary">
+              One of three columns
+            </div>
+            <div class="col bg-danger">
+              One of three columns
+            </div>
+        </div> -->
+        <!-- <nav class="row">
+            <div class="col-sm-12 naviGate d-flex">
                 <ul>
                     <li class="coderWho"><a href="#">Coder Intel</a></li>
                     <li class="projects"><a href="#">Portfolio</a></li>
                     <li class="contactInfo"><a href="#">Contact Intel</a></li>
                     <li class="resumeWorx"><a href="#">Resume</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav> -->
     </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,6 +1,9 @@
 $primary: #ff811d;
 $link-color: #ff1d9b;
 
+// bootstrap css-grid
+$enable-grid-classes: false;
+$enable-cssgrid: true;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -20,14 +23,20 @@ body {
 
 }
 
-.container {
-    height: 8em;
 
+.navbar-nav {
+    width: 100%;
+    justify-content: end;
 }
 
-// .naviGate > ul {
-//     // height: 3rem;
-// }
+// sets the marigin right for the last tab in the navbar
+.nav-item:nth-child(4) {
+    margin-right: 3rem;
+    
+}
 
+.myImg {
+    max-height: 15rem;
+}
 
 

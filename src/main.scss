@@ -1,5 +1,4 @@
-$primary: #ff811d;
-$link-color: #ff1d9b;
+@import 'colors';
 
 // bootstrap css-grid
 $enable-grid-classes: false;
@@ -16,6 +15,7 @@ $enable-cssgrid: true;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -23,18 +23,212 @@ body {
 
 }
 
+// header {
+//     position: absolute;
+// }
 
-.navbar-nav {
+.navbar {
+    position: fixed;
+    background-color: $primary;
     width: 100%;
-    justify-content: end;
-}
+    z-index: 200;
 
-// sets the marigin right for the last tab in the navbar
-.nav-item:nth-child(4) {
-    margin-right: 3rem;
+    .navbar-nav {
     
+        width: 100%;
+        justify-content: end;
+    }
+    
+    .main-logo {
+        height: auto;
+        width: 7em;
+    }
+    
+    .navbar-toggler-icon {
+        fill: #ffffff;
+        
+    }
+    
+    
+    .nav-link {
+        display: inline-block;
+        flex-wrap: nowrap;
+        color: #ffffff;
+    }
+    
+    // .mainLogo {
+    //     height: 5rem;
+    //     width: 5rem;
+    // }
+    
+    // sets the marigin right for the last tab in the navbar
+    .nav-item:nth-child(4) {
+        margin-right: 3rem;
+        
+    }
 }
 
-.myImg {
-    max-height: 15rem;
+.g-col-12 {
+    position: relative;
+    top: 5rem;
 }
+
+.imgContainer {
+    position: relative;
+    height: 19rem;
+    width: 100%;
+    background-color: #6e6464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+
+}
+
+.containImg {
+    position: absolute;
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: green;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        
+        transform: skew(45deg);
+    }
+
+    .myImg {
+        position: absolute;
+        height: 20rem;
+        width: 20rem;
+        top: -0.2rem;
+        left: -0.3rem;
+        object-fit: fill;
+        transition: 2s ease-out;
+        &:hover {
+            transition: 1.5s ease-in;
+            scale: 2;
+        }
+    }
+}
+
+.skillCarousel {
+    position: relative;
+    top: 1rem;
+   
+
+        #compSkills {
+        // background-color: #6e6464;
+        height: 6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+            .carousel-item {
+                height: 5em;
+                
+                h5 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .fa-html5 {
+                    color: $naruto;
+                    height: 3em;
+                    
+                }
+
+                .fa-css3 {
+                    color: $dory;
+                    height: 3em;
+                }
+
+                .fa-sass {
+                    color: $primary;
+                    height: 3em;
+                }
+
+                .fa-js {
+                    color: $tweety;
+                    height: 3em;
+                }
+
+                .fa-node {
+                    color: $rock-lee;
+                    height: 3em;
+                }
+
+                .fa-npm {
+                    color: $sasuke;
+                    height: 3em;
+                }
+                
+                .fa-python {
+                    color: $osmosis-jones;
+                    height: 3em;
+                }
+
+                .fa-react {
+                    color: $jimbei;
+                    height: 3em;
+                }
+
+                .fa-database {
+                    color: $primary;
+                    height: 3em;
+                }
+
+                .fa-github {
+                    color: $mr-popo;
+                    height: 3em;
+                }
+                
+                .fa-bootstrap {
+                    color: $barney;
+                    height: 3em;
+                }
+
+            }
+    }
+}
+
+
+
+.htmlFive {
+    fill: $naruto;
+}
+
+
+
+.cssThree {
+    fill: $jimbei;
+}
+
+.jS {
+    fill: $tweety;
+}
+
+.nodeJS {
+    fill: $rock-lee;
+}
+
+.nodePack {
+    fill: $sasuke;
+}
+
+.reAct {
+    fill: $dory;
+}
+
+.bootyStrap {
+    fill: $barney
+}
+

@@ -11376,7 +11376,6 @@ body {
   position: relative;
   height: 19rem;
   width: 100%;
-  background-color: #6e6464;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11500,4 +11499,8 @@ body {
 
 .bootyStrap {
   fill: #9929bd;
+}
+
+.shortBio {
+  color: #ffffff;
 }

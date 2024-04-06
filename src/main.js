@@ -209,12 +209,12 @@ function nextQuoteAppear(){
                         setTimeout(() => {
                             disappearQuote();
                             return oneQuoteAtATime();
-                        }, 4000)
-                    }, 4000)
-                }, 4000)
-            }, 4000)
-        }, 4000)
-    }, 4000)
+                        }, 86400000)
+                    }, 86400000)
+                }, 86400000)
+            }, 86400000)
+        }, 86400000)
+    }, 86400000)
 }
 
 

@@ -1,4 +1,5 @@
 @import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 // bootstrap css-grid
 $enable-grid-classes: false;
@@ -20,7 +21,8 @@ $enable-cssgrid: true;
 
 body {
     height: 100vh;
-
+    background-color: $mr-popo;
+    
 }
 
 // header {
@@ -67,6 +69,9 @@ body {
         
     }
 }
+
+// .main-body {
+// }
 
 .g-col-12 {
     position: relative;
@@ -119,112 +124,296 @@ body {
     }
 }
 
-.skillCarousel {
-    position: relative;
-    top: 1rem;
-   
+.skills {
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    .skillCarousel {
+        position: relative;
+        top: 1rem;
+        // background-color: $mr-popo;
+    
         #compSkills {
-        // background-color: #6e6464;
-        height: 6em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // background-color: brown;
-
-            // .carousel-fade .carousel-item {
-            //     opacity: 0;
-            //     transition-duration: 0.25s;
-            //     transition-property: opacity;
-            // }
-
-            // .carousel-fade .carousel-item-next,
-            // .carousel-fade .carousel-item-prev {
-            //     opacity: 0.25;
-            //     transition-delay: 2s;
-
-            // }
-
-            // .carousel-fade .active.carousel-item-next,
-            // .carousel-fade .active.carousel-item-prev {
-            //     opacity: 0.25;
-            // }
-
-            // .carousel-fade .active.carousel-item-next,
-            // .carousel-fade .active.carousel-item-prev,
-            // .carousel-fade .carousel-item-next,
-            // .carousel-fade .carousel-item-prev {
-            //     transform: translateX(0);
-            //     transform: translate3d(0,0,0);
-            // }
-
-            .carousel-item {
-                height: 5em;
-                
-                h5 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .fa-html5 {
-                    color: $naruto;
-                    height: 3em;
+            // background-color: #6e6464;
+            height: 6rem;
+            width: 40rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: brown;
+    
+                // .carousel-fade .carousel-item {
+                //     opacity: 0;
+                //     transition-duration: 0.25s;
+                //     transition-property: opacity;
+                // }
+    
+                // .carousel-fade .carousel-item-next,
+                // .carousel-fade .carousel-item-prev {
+                //     opacity: 0.25;
+                //     transition-delay: 2s;
+    
+                // }
+    
+                // .carousel-fade .active.carousel-item-next,
+                // .carousel-fade .active.carousel-item-prev {
+                //     opacity: 0.25;
+                // }
+    
+                // .carousel-fade .active.carousel-item-next,
+                // .carousel-fade .active.carousel-item-prev,
+                // .carousel-fade .carousel-item-next,
+                // .carousel-fade .carousel-item-prev {
+                //     transform: translateX(0);
+                //     transform: translate3d(0,0,0);
+                // }
+    
+                .carousel-item {
+                    height: 5em;
                     
+                    h5 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+    
+                    .fa-html5 {
+                        color: $naruto;
+                        height: 3em;
+                        
+                    }
+    
+                    .fa-css3 {
+                        color: $vegeta;
+                        height: 3em;
+                    }
+    
+                    .fa-sass {
+                        color: $buu;
+                        height: 3em;
+                    }
+    
+                    .fa-js {
+                        color: $tweety;
+                        height: 3em;
+                    }
+    
+                    .fa-node {
+                        color: $rock-lee;
+                        height: 3em;
+                    }
+    
+                    .fa-npm {
+                        color: $sasuke;
+                        height: 3em;
+                    }
+                    
+                    .fa-python {
+                        color: $osmosis-jones;
+                        height: 3em;
+                    }
+    
+                    .fa-react {
+                        color: $jimbei;
+                        height: 3em;
+                    }
+    
+                    .fa-database {
+                        color: $buu;
+                        height: 3em;
+                    }
+    
+                    .fa-github {
+                        color: $mr-popo;
+                        height: 3em;
+                    }
+                    
+                    .fa-bootstrap {
+                        color: $barney;
+                        height: 3em;
+                    }
+    
                 }
 
-                .fa-css3 {
-                    color: $dory;
-                    height: 3em;
+                .leftPointer {
+                    fill: $primary;
                 }
-
-                .fa-sass {
-                    color: $primary;
-                    height: 3em;
+            
+                .rightPointer {
+                    fill: $primary;
                 }
-
-                .fa-js {
-                    color: $tweety;
-                    height: 3em;
-                }
-
-                .fa-node {
-                    color: $rock-lee;
-                    height: 3em;
-                }
-
-                .fa-npm {
-                    color: $sasuke;
-                    height: 3em;
-                }
-                
-                .fa-python {
-                    color: $osmosis-jones;
-                    height: 3em;
-                }
-
-                .fa-react {
-                    color: $jimbei;
-                    height: 3em;
-                }
-
-                .fa-database {
-                    color: $primary;
-                    height: 3em;
-                }
-
-                .fa-github {
-                    color: $mr-popo;
-                    height: 3em;
-                }
-                
-                .fa-bootstrap {
-                    color: $barney;
-                    height: 3em;
-                }
-
-            }
+        }
     }
+    
+}
+.quoteBlock {
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+
+    .quote {
+        
+    
+        .card {
+            max-width: 550px;
+            border-color: $primary;
+    
+    
+            .card-header {
+                background-color: $primary;
+    
+                h4 {
+                    font-family: "Handlee", cursive;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+    
+            .card-body {
+                p, footer {
+                    font-family: "Handlee", cursive;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+        max-width: 45rem;
+        color: $mr-popo;
+        
+
+        .longhorn {
+            color: $naruto;
+        }
+        
+        .panther {
+            color: $vegeta;
+        }
+    }
+
+
+    .lifeAchievements {
+
+        width: 15em;
+        height: 50em;
+        border-radius: 10px;
+        background-color: $bulbasaur;
+
+        .usmcG {
+            position: relative;
+            left: 2em;
+            width: 11em;
+            height: 11em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+            .usmc {
+                
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // background-color: $rock-lee;
+
+                img {
+                    position: inherit;
+                    bottom: 5em;
+                    width: 7em;
+                    height: 7em;
+                }
+            }
+
+            
+        }
+
+        .hvacG {
+            position: relative;
+            left: 2em;
+            width: 11em;
+            height: 11em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .hvac {
+                
+
+                img {
+                    position: inherit;
+                    bottom: 5em;
+                    width: 9em;
+                    height: 8em;
+                }
+            }
+
+            
+        }
+
+        .gsuG {
+            position: relative;
+            left: 2em;
+            width: 11em;
+            height: 11em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .gsu {
+                
+
+                img {
+                    position: inherit;
+                    bottom: 5em;
+                    width: 7em;
+                    height: 7em;
+                }
+            }
+
+            
+        }
+        
+        .diverG {
+            position: relative;
+            left: 2em;
+            width: 11em;
+            height: 0.25em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .diver {
+                
+
+                img {
+                    position: inherit;
+                    width: 7em;
+                    height: 4em;
+                }
+            }
+        }
+        
+
+        
+            
+
+
+        
+
+    }
+
 }
 
 
@@ -251,9 +440,9 @@ body {
     fill: $sasuke;
 }
 
-.reAct {
-    fill: $dory;
-}
+// .reAct {
+//     fill: $dory;
+// }
 
 .bootyStrap {
     fill: $barney

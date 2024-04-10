@@ -21,8 +21,6 @@ $enable-cssgrid: true;
 
 body {
     height: 100vh;
-    background-color: $mr-popo;
-    
 }
 
 // header {
@@ -137,8 +135,8 @@ body {
     
         #compSkills {
             // background-color: #6e6464;
-            height: 6rem;
-            width: 40rem;
+            height: 6em;
+            width: 52em;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -305,11 +303,17 @@ body {
 
 
     .lifeAchievements {
-
+        margin-left: 5em;
         width: 15em;
         height: 50em;
         border-radius: 10px;
-        background-color: $bulbasaur;
+        background-color: $broly;
+
+        hr {
+            background: $primary;
+            height: 3px;
+            border-color: $primary;
+        }
 
         .usmcG {
             position: relative;
@@ -416,6 +420,80 @@ body {
 
 }
 
+.weatherChannel {
+    width: 100%;
+    display: block;
+
+    .weatherHead {
+        h3 {
+            font-size: 35px;
+        }
+        
+        .weatherOne {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $jimbei;
+            // .g-col-md-3 {
+                // margin: 1em;
+                // height: 11em;
+                // width: 11em;
+                // border-radius: 12px;
+                // background-color: $vegeta;
+            // }
+
+            .atl {
+                margin: 1em;
+                height: 9em;
+                width: 9em;
+                border-radius: 12px;
+                overflow: hidden;
+                
+                background-color: $vegeta;
+                .temp {
+                    padding: 0.25em;
+                    height: 3em;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $barney;
+                    .farenheit {
+                        height: 3em;
+                        width: 3em;
+                        background-color: $naruto;
+                    }
+                    .celcius {
+                        height: 2em;
+                        width: 2em;
+                        background-color: $tweety;
+                    }
+                }
+                .weather {
+                    padding: 0.25em;
+                    height: 3em;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    background-color: $bulbasaur;
+                }
+                .location {
+                    padding: 0.25em;
+                    height: 3em;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $sasuke;
+                }
+            }
+        }
+
+    }
+
+}
 
 
 .htmlFive {

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md mb-3 col-sm-12">
+        <nav class="navbar navbar-expand-md col-sm-12">
             <div class="container-fluid">
               <a class="navbar-brand justify-content-start" href="/src/index.html">
                 <svg class="main-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1452.89 571.02">
@@ -158,7 +158,7 @@
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#compSkills" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true">
+                  <span class="carousel-control-next" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-arrow-right-square-fill rightPointer" viewBox="0 0 16 16">
                     <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
                     </svg>
@@ -228,13 +228,33 @@
           </div>
         </div>
       </div>
-      <div class="grid">
-        <div class="g-col-12 bg-light text-center">
+      <div class="grid weatherChannel">
+        <div class="g-col-12 weatherHead mb-3 text-center">
             <h3>Weather</h3>
+            <div class="grid weatherOne">
+              <div class="g-col-md-3 atl">
+                <div class="grid temp">
+                  <div class="g-col-4 farenheit"></div>
+                  <div class="g-col-4 celcius"></div>
+                </div>
+                <div class="grid weather">
+                  <div class="g-col-4 weatherPic"></div>
+                </div>
+                <div class="grid location">
+                  <div class="g-col-4 locale"></div>
+                </div>
+              </div>
+              <div class="g-col-md-3 phx"></div>
+              <div class="g-col-md-3 nyc"></div>
+              <div class="g-col-md-3 dillon"></div>
+            </div>
+            <div class="grid weatherTwo">
+              <div class="g-col-md-3 tpa"></div>
+              <div class="g-col-md-3 jax"></div>
+              <div class="g-col-md-3 oki"></div>
+            </div>
         </div>
-        <div class="g-col-12 bg-primary">
-            
-        </div>
+       
       </div>
       <footer class="grid bg-teal">
         <div class="g-col-12 bg-primary text-center">

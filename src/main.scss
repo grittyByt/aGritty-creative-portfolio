@@ -56,10 +56,6 @@ body {
         color: #ffffff;
     }
     
-    // .mainLogo {
-    //     height: 5rem;
-    //     width: 5rem;
-    // }
     
     // sets the marigin right for the last tab in the navbar
     .nav-item:nth-child(4) {
@@ -68,196 +64,209 @@ body {
     }
 }
 
-// .main-body {
-// }
 
-.g-col-12 {
-    position: relative;
-    top: 5rem;
-}
-
-.imgContainer {
-    position: relative;
-    height: 19rem;
-    width: 100%;
-    // background-color: #6e6464;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-
-}
-
-.containImg {
-    position: absolute;
-    height: 17rem;
-    width: 17rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // background: green;
-    border-radius: 50%;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        
-        transform: skew(45deg);
-    }
-
-    .myImg {
-        position: absolute;
-        height: 20rem;
-        width: 20rem;
-        top: -0.2rem;
-        left: -0.3rem;
-        object-fit: fill;
-        transition: 2s ease-out;
-        &:hover {
-            transition: 1.5s ease-in;
-            scale: 2;
-        }
-    }
-}
-
-.skills {
-    margin-bottom: 7rem;
-    display: flex;
+.intro {
+    height: 40rem;
     align-items: center;
     justify-content: center;
 
-    .skillCarousel {
-        position: relative;
-        top: 1rem;
-        // background-color: $mr-popo;
-    
-        #compSkills {
+    .pfpBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 19rem;
+
+        .imgContainer {
+            position: relative;
+            // height: 19rem;
+            // width: 100%;
             // background-color: #6e6464;
-            height: 6em;
-            width: 52em;
             display: flex;
             align-items: center;
             justify-content: center;
-            // background-color: brown;
-    
-                // .carousel-fade .carousel-item {
-                //     opacity: 0;
-                //     transition-duration: 0.25s;
-                //     transition-property: opacity;
-                // }
-    
-                // .carousel-fade .carousel-item-next,
-                // .carousel-fade .carousel-item-prev {
-                //     opacity: 0.25;
-                //     transition-delay: 2s;
-    
-                // }
-    
-                // .carousel-fade .active.carousel-item-next,
-                // .carousel-fade .active.carousel-item-prev {
-                //     opacity: 0.25;
-                // }
-    
-                // .carousel-fade .active.carousel-item-next,
-                // .carousel-fade .active.carousel-item-prev,
-                // .carousel-fade .carousel-item-next,
-                // .carousel-fade .carousel-item-prev {
-                //     transform: translateX(0);
-                //     transform: translate3d(0,0,0);
-                // }
-    
-                .carousel-item {
-                    height: 5em;
+            
+        
+            // animation: name duration timing-function delay iteration-count direction fill-mode;
+            .containImg {
+                position: absolute;
+                height: 17rem;
+                width: 17rem;
+                border-radius: 50%;
+                overflow: hidden;
+            
+                &::before {
+                    content: '';
                     
-                    h5 {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-    
-                    .fa-html5 {
-                        color: $naruto;
-                        height: 3em;
-                        
-                    }
-    
-                    .fa-css3 {
-                        color: $vegeta;
-                        height: 3em;
-                    }
-    
-                    .fa-sass {
-                        color: $buu;
-                        height: 3em;
-                    }
-    
-                    .fa-js {
-                        color: $tweety;
-                        height: 3em;
-                    }
-    
-                    .fa-node {
-                        color: $rock-lee;
-                        height: 3em;
-                    }
-    
-                    .fa-npm {
-                        color: $sasuke;
-                        height: 3em;
-                    }
-                    
-                    .fa-python {
-                        color: $osmosis-jones;
-                        height: 3em;
-                    }
-    
-                    .fa-react {
-                        color: $jimbei;
-                        height: 3em;
-                    }
-    
-                    .fa-database {
-                        color: $buu;
-                        height: 3em;
-                    }
-    
-                    .fa-github {
-                        color: $mr-popo;
-                        height: 3em;
-                    }
-                    
-                    .fa-bootstrap {
-                        color: $barney;
-                        height: 3em;
-                    }
-    
-                }
-
-                .leftPointer {
-                    fill: $primary;
+                    transform: skew(45deg);
                 }
             
-                .rightPointer {
-                    fill: $primary;
+                .myImg {
+                    position: absolute;
+                    height: 20em;
+                    width: 20em;
+                    object-fit: fill;
+                    transition: 2s ease-out;
+                    &:hover {
+                        transition: 1.5s ease-in;
+                        scale: 2;
+                    }
                 }
+            }
         }
     }
     
+    
+    
+    .skills {
+        // margin-bottom: 7rem;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    
+        .skillCarousel {
+            position: relative;
+            // top: 1rem;
+            // background-color: $mr-popo;
+        
+            #compSkills {
+                // background-color: #6e6464;
+                height: 6em;
+                // width: 52em;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // background-color: brown;
+        
+                    // .carousel-fade .carousel-item {
+                    //     opacity: 0;
+                    //     transition-duration: 0.25s;
+                    //     transition-property: opacity;
+                    // }
+        
+                    // .carousel-fade .carousel-item-next,
+                    // .carousel-fade .carousel-item-prev {
+                    //     opacity: 0.25;
+                    //     transition-delay: 2s;
+        
+                    // }
+        
+                    // .carousel-fade .active.carousel-item-next,
+                    // .carousel-fade .active.carousel-item-prev {
+                    //     opacity: 0.25;
+                    // }
+        
+                    // .carousel-fade .active.carousel-item-next,
+                    // .carousel-fade .active.carousel-item-prev,
+                    // .carousel-fade .carousel-item-next,
+                    // .carousel-fade .carousel-item-prev {
+                    //     transform: translateX(0);
+                    //     transform: translate3d(0,0,0);
+                    // }
+        
+                    .carousel-item {
+                        height: 5em;
+                        
+                        h5 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+        
+                        .fa-html5 {
+                            color: $naruto;
+                            height: 3em;
+                            
+                        }
+        
+                        .fa-css3 {
+                            color: $vegeta;
+                            height: 3em;
+                        }
+        
+                        .fa-sass {
+                            color: $buu;
+                            height: 3em;
+                        }
+        
+                        .fa-js {
+                            color: $tweety;
+                            height: 3em;
+                        }
+        
+                        .fa-node {
+                            color: $rock-lee;
+                            height: 3em;
+                        }
+        
+                        .fa-npm {
+                            color: $sasuke;
+                            height: 3em;
+                        }
+                        
+                        .fa-python {
+                            color: $osmosis-jones;
+                            height: 3em;
+                        }
+        
+                        .fa-react {
+                            color: $jimbei;
+                            height: 3em;
+                        }
+        
+                        .fa-database {
+                            color: $buu;
+                            height: 3em;
+                        }
+        
+                        .fa-github {
+                            color: $mr-popo;
+                            height: 3em;
+                        }
+                        
+                        .fa-bootstrap {
+                            color: $barney;
+                            height: 3em;
+                        }
+        
+                    }
+                    // .carousel-control-prev {
+                    //     position: relative;
+                    //     left: 4em;
+                    // }
+                    .leftPointer {
+                        position: relative;
+                        left: 4em;
+                        height: 2em;
+                        width: 2em;
+                        fill: $primary;
+                  
+                    }
+                
+                    .rightPointer {
+                        position: relative;
+                        right: 4em;
+                        height: 2em;
+                        width: 2em;
+                        fill: $primary;
+                    }
+            }
+        }
+        
+    }
+    
 }
+
 .quoteBlock {
-    margin-bottom: 7rem;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20rem;
-
-    .quote {
-        
     
+    
+    .quote {
+       max-width: 650px;
+        text-align: center;
         .card {
-            max-width: 550px;
             border-color: $primary;
     
     
@@ -281,145 +290,124 @@ body {
         }
     }
 }
-
 .bio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
-    p {
-        max-width: 45rem;
-        color: $mr-popo;
-        
+    align-items: start;
+    justify-content: center;
 
-        .longhorn {
-            color: $naruto;
-        }
-        
-        .panther {
-            color: $vegeta;
+    .g-col-12, .g-col-md-6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 2em;
+            // margin-left: 5em;
+            // max-width: 45rem;
+            color: $mr-popo;
+            
+    
+            .longhorn {
+                color: $naruto;
+            }
+            
+            .panther {
+                color: $vegeta;
+            }
         }
     }
+   
 
 
-    .lifeAchievements {
-        margin-left: 5em;
-        width: 15em;
-        height: 50em;
-        border-radius: 10px;
-        background-color: $broly;
-
-        hr {
-            background: $primary;
-            height: 3px;
-            border-color: $primary;
-        }
-
-        .usmcG {
-            position: relative;
-            left: 2em;
-            width: 11em;
-            height: 11em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-
-            .usmc {
-                
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // background-color: $rock-lee;
-
-                img {
-                    position: inherit;
-                    bottom: 5em;
-                    width: 7em;
-                    height: 7em;
-                }
-            }
-
-            
-        }
-
-        .hvacG {
-            position: relative;
-            left: 2em;
-            width: 11em;
-            height: 11em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .hvac {
-                
-
-                img {
-                    position: inherit;
-                    bottom: 5em;
-                    width: 9em;
-                    height: 8em;
-                }
-            }
-
-            
-        }
-
-        .gsuG {
-            position: relative;
-            left: 2em;
-            width: 11em;
-            height: 11em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .gsu {
-                
-
-                img {
-                    position: inherit;
-                    bottom: 5em;
-                    width: 7em;
-                    height: 7em;
-                }
-            }
-
-            
-        }
-        
-        .diverG {
-            position: relative;
-            left: 2em;
-            width: 11em;
-            height: 0.25em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .diver {
-                
-
-                img {
-                    position: inherit;
-                    width: 7em;
-                    height: 4em;
-                }
-            }
-        }
-        
-
-        
-            
-
-
-        
-
-    }
-
+    
 }
 
+.thusFar {
+    
+
+    
+    
+    :nth-child(-n + 4 of .g-col-6) {
+        margin: 2em;
+        padding: 2em;
+        display: flex;
+        height: 8em;
+        width: 8em;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 2px solid $island-green;
+        background-color: $broly;
+
+        img {
+            // position: inherit;
+            // bottom: 5em;
+            width: 3em;
+            height: 3em;
+        }
+    }
+
+    // :nth-child(-n + 4 of .g-col-md-3) {
+    //     margin: 2em;
+    //     padding: 2em;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     border-radius: 8px;
+    //     border: 2px solid $island-green;
+    //     background-color: $broly;
+
+    //     img {
+    //         // position: inherit;
+    //         // bottom: 5em;
+    //         width: 7em;
+    //         height: 7em;
+    //     }
+    // }
+
+    // .g-col-md-3 {
+        
+    //     // background-color: $rock-lee;
+
+    //     img {
+    //         position: inherit;
+    //         // bottom: 5em;
+    //         width: 10em;
+    //         height: 7em;
+    //     }
+    // }
+
+    // .hvac {   
+        
+    //     img {
+    //         position: inherit;
+    //         // bottom: 5em;
+    //         width: 9em;
+    //         height: 8em;
+    //     }
+    // }
+
+    // .gsu {
+       
+    //     img {
+    //         position: inherit;
+    //         // bottom: 5em;
+    //         width: 7em;
+    //         height: 7em;
+    //     }
+    // }
+
+    // .diver {
+        
+    //     img {
+    //         position: inherit;
+    //         width: 7em;
+    //         height: 4em;
+    //     }
+    // }
+    
+
+}
 .weatherChannel {
     width: 100%;
     display: block;
@@ -449,8 +437,8 @@ body {
                 width: 9em;
                 border-radius: 12px;
                 overflow: hidden;
-                
                 background-color: $vegeta;
+
                 .temp {
                     padding: 0.25em;
                     height: 3em;
@@ -459,17 +447,20 @@ body {
                     align-items: center;
                     justify-content: center;
                     background-color: $barney;
+
                     .farenheit {
                         height: 3em;
                         width: 3em;
                         background-color: $naruto;
                     }
+
                     .celcius {
                         height: 2em;
                         width: 2em;
                         background-color: $tweety;
                     }
                 }
+
                 .weather {
                     padding: 0.25em;
                     height: 3em;

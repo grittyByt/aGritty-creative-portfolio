@@ -11247,133 +11247,129 @@ body {
   margin-right: 3rem;
 }
 
-.g-col-12 {
-  position: relative;
-  top: 5rem;
+.intro {
+  height: 40rem;
+  align-items: center;
+  justify-content: center;
 }
-
-.imgContainer {
-  position: relative;
+.intro .pfpBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 19rem;
-  width: 100%;
+}
+.intro .pfpBox .imgContainer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.containImg {
+.intro .pfpBox .imgContainer .containImg {
   position: absolute;
   height: 17rem;
   width: 17rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   overflow: hidden;
 }
-.containImg::before {
+.intro .pfpBox .imgContainer .containImg::before {
   content: "";
   transform: skew(45deg);
 }
-.containImg .myImg {
+.intro .pfpBox .imgContainer .containImg .myImg {
   position: absolute;
-  height: 20rem;
-  width: 20rem;
-  top: -0.2rem;
-  left: -0.3rem;
+  height: 20em;
+  width: 20em;
   object-fit: fill;
   transition: 2s ease-out;
 }
-.containImg .myImg:hover {
+.intro .pfpBox .imgContainer .containImg .myImg:hover {
   transition: 1.5s ease-in;
   scale: 2;
 }
-
-.skills {
-  margin-bottom: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.skills .skillCarousel {
+.intro .skills .skillCarousel {
   position: relative;
-  top: 1rem;
 }
-.skills .skillCarousel #compSkills {
+.intro .skills .skillCarousel #compSkills {
   height: 6em;
-  width: 52em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.skills .skillCarousel #compSkills .carousel-item {
+.intro .skills .skillCarousel #compSkills .carousel-item {
   height: 5em;
 }
-.skills .skillCarousel #compSkills .carousel-item h5, .skills .skillCarousel #compSkills .carousel-item .h5 {
+.intro .skills .skillCarousel #compSkills .carousel-item h5, .intro .skills .skillCarousel #compSkills .carousel-item .h5 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-html5 {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-html5 {
   color: #ff6a00;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-css3 {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-css3 {
   color: #0061ff;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-sass {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-sass {
   color: #e52666;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-js {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-js {
   color: #f5ec00;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-node {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-node {
   color: #77bb41;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-npm {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-npm {
   color: #e32400;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-python {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-python {
   color: #0d4e90;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-react {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-react {
   color: #00c7fc;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-database {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-database {
   color: #e52666;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-github {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-github {
   color: #202426;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .carousel-item .fa-bootstrap {
+.intro .skills .skillCarousel #compSkills .carousel-item .fa-bootstrap {
   color: #9929bd;
   height: 3em;
 }
-.skills .skillCarousel #compSkills .leftPointer {
+.intro .skills .skillCarousel #compSkills .leftPointer {
+  position: relative;
+  left: 4em;
+  height: 2em;
+  width: 2em;
   fill: #58A712;
 }
-.skills .skillCarousel #compSkills .rightPointer {
+.intro .skills .skillCarousel #compSkills .rightPointer {
+  position: relative;
+  right: 4em;
+  height: 2em;
+  width: 2em;
   fill: #58A712;
 }
 
 .quoteBlock {
-  margin-bottom: 7rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20rem;
+}
+.quoteBlock .quote {
+  max-width: 650px;
+  text-align: center;
 }
 .quoteBlock .quote .card {
-  max-width: 550px;
   border-color: #58A712;
 }
 .quoteBlock .quote .card .card-header {
@@ -11391,90 +11387,40 @@ body {
 }
 
 .bio {
+  align-items: start;
+  justify-content: center;
+}
+.bio .g-col-12, .bio .g-col-md-6 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bio p {
-  max-width: 45rem;
+.bio .g-col-12 p, .bio .g-col-md-6 p {
+  margin: 2em;
   color: #202426;
 }
-.bio p .longhorn {
+.bio .g-col-12 p .longhorn, .bio .g-col-md-6 p .longhorn {
   color: #ff6a00;
 }
-.bio p .panther {
+.bio .g-col-12 p .panther, .bio .g-col-md-6 p .panther {
   color: #0061ff;
 }
-.bio .lifeAchievements {
-  margin-left: 5em;
-  width: 15em;
-  height: 50em;
-  border-radius: 10px;
+
+.thusFar :nth-child(-n+4 of .g-col-6) {
+  margin: 2em;
+  padding: 2em;
+  display: flex;
+  height: 8em;
+  width: 8em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid #abdd30;
   background-color: #D5E9C4;
 }
-.bio .lifeAchievements hr {
-  background: #58A712;
-  height: 3px;
-  border-color: #58A712;
-}
-.bio .lifeAchievements .usmcG {
-  position: relative;
-  left: 2em;
-  width: 11em;
-  height: 11em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bio .lifeAchievements .usmcG .usmc img {
-  position: inherit;
-  bottom: 5em;
-  width: 7em;
-  height: 7em;
-}
-.bio .lifeAchievements .hvacG {
-  position: relative;
-  left: 2em;
-  width: 11em;
-  height: 11em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bio .lifeAchievements .hvacG .hvac img {
-  position: inherit;
-  bottom: 5em;
-  width: 9em;
-  height: 8em;
-}
-.bio .lifeAchievements .gsuG {
-  position: relative;
-  left: 2em;
-  width: 11em;
-  height: 11em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bio .lifeAchievements .gsuG .gsu img {
-  position: inherit;
-  bottom: 5em;
-  width: 7em;
-  height: 7em;
-}
-.bio .lifeAchievements .diverG {
-  position: relative;
-  left: 2em;
-  width: 11em;
-  height: 0.25em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.bio .lifeAchievements .diverG .diver img {
-  position: inherit;
-  width: 7em;
-  height: 4em;
+.thusFar :nth-child(-n+4 of .g-col-6) img {
+  width: 3em;
+  height: 3em;
 }
 
 .weatherChannel {

@@ -264,7 +264,7 @@ body {
     
     
     .quote {
-       max-width: 650px;
+        max-width: 650px;  
         text-align: center;
         .card {
             border-color: $primary;
@@ -323,45 +323,43 @@ body {
 }
 
 .thusFar {
-    
-
+   
     
     
     :nth-child(-n + 4 of .g-col-6) {
-        margin: 2em;
-        padding: 2em;
-        display: flex;
-        height: 8em;
-        width: 8em;
+        // margin: 1em;
+        // padding: 2em;
+        // height: 7em;
+        // width: 7em;
+        display:flex;
         align-items: center;
         justify-content: center;
         border-radius: 8px;
-        border: 2px solid $island-green;
-        background-color: $broly;
+        border: 0.5px solid none;
+        box-shadow: 2px 4px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: $pear;
 
         img {
             // position: inherit;
             // bottom: 5em;
-            width: 3em;
-            height: 3em;
+            width: 8em;
+            height: 8em;
         }
     }
 
     // :nth-child(-n + 4 of .g-col-md-3) {
     //     margin: 2em;
     //     padding: 2em;
-    //     display: flex;
+    //     display: none;
     //     align-items: center;
     //     justify-content: center;
     //     border-radius: 8px;
     //     border: 2px solid $island-green;
-    //     background-color: $broly;
+    //     background-color: $sasuke;
 
     //     img {
-    //         // position: inherit;
-    //         // bottom: 5em;
-    //         width: 7em;
-    //         height: 7em;
+    //         width: 4em;
+    //         height: 4em;
     //     }
     // }
 
@@ -377,34 +375,6 @@ body {
     //     }
     // }
 
-    // .hvac {   
-        
-    //     img {
-    //         position: inherit;
-    //         // bottom: 5em;
-    //         width: 9em;
-    //         height: 8em;
-    //     }
-    // }
-
-    // .gsu {
-       
-    //     img {
-    //         position: inherit;
-    //         // bottom: 5em;
-    //         width: 7em;
-    //         height: 7em;
-    //     }
-    // }
-
-    // .diver {
-        
-    //     img {
-    //         position: inherit;
-    //         width: 7em;
-    //         height: 4em;
-    //     }
-    // }
     
 
 }

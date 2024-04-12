@@ -11407,20 +11407,17 @@ body {
 }
 
 .thusFar :nth-child(-n+4 of .g-col-6) {
-  margin: 2em;
-  padding: 2em;
   display: flex;
-  height: 8em;
-  width: 8em;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  border: 2px solid #abdd30;
-  background-color: #D5E9C4;
+  border: 0.5px solid none;
+  box-shadow: 2px 4px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #C9CC3F;
 }
 .thusFar :nth-child(-n+4 of .g-col-6) img {
-  width: 3em;
-  height: 3em;
+  width: 8em;
+  height: 8em;
 }
 
 .weatherChannel {

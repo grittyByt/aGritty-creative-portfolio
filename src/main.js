@@ -4,7 +4,7 @@
 //   interval: 2000,
 //   touch: false
 // })
-
+// quote block
 const quoteArea = document.querySelector('#quoteOfDay');
 const authorArea = document.querySelector('#quoteAuthor');
 const sourceTitleArea = document.querySelector('#quoteSource');
@@ -12,6 +12,8 @@ const quoteContainer = [];
 const authorContainer = [];
 const sourceContainer = [];
 const good = 0;
+
+
 
 quoteContainer.push('Computers are like Old Testament gods; lots of rules and no mercy.', 
                     'Man is still the most extraordinary computer of all', 
@@ -176,6 +178,8 @@ function oneQuoteAtATime(){
 
 // const rotatingQuotes =
 
+
+
 function nextQuoteAppear(){
     disappearQuote();
     quoteArea.innerText += the[1];
@@ -218,11 +222,19 @@ function nextQuoteAppear(){
 }
 
 
+
 function disappearQuote(){
     quoteArea.innerText = '';
     authorArea.innerText = '';
     sourceTitleArea.innerText = '';
 }
+
+// weather block
+const f = document.querySelector('#farenheit');
+const c = document.querySelector('#celsius');
+const weather = document.querySelector('#weatherPic');
+const city = document.querySelector('#locale');
+
 
 
 

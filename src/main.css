@@ -11219,222 +11219,232 @@ textarea.form-control-lg {
 
 body {
   height: 100vh;
+  background-color: #E5E4E2;
 }
-
-.navbar {
+body header {
   position: fixed;
-  background-color: #58A712;
   width: 100%;
   z-index: 200;
+  background: linear-gradient(90deg, rgb(71, 134, 22) 4%, rgb(88, 167, 18) 24%, rgb(99, 203, 52) 78%, rgb(65, 179, 79) 100%);
 }
-.navbar .navbar-nav {
+body header .navbar {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body header .navbar .navbar-nav {
   width: 100%;
   justify-content: end;
 }
-.navbar .main-logo {
+body header .navbar .main-logo {
   height: auto;
   width: 7em;
 }
-.navbar .navbar-toggler-icon {
+body header .navbar .navbar-toggler-icon {
   fill: #ffffff;
 }
-.navbar .nav-link {
+body header .navbar .nav-link {
   display: inline-block;
   flex-wrap: nowrap;
   color: #ffffff;
+  transition: transform 0.3s ease-out, color 0.2s ease-in;
 }
-.navbar .nav-item:nth-child(4) {
+body header .navbar .nav-link:hover {
+  transform: translateY(-5px);
+  color: #F4BB44;
+}
+body header .navbar .nav-item:nth-child(4) {
   margin-right: 3rem;
 }
-
-.intro {
+body .main-body {
+  max-width: 80%;
+  border: 1px solid #E5E4E2;
+  background-color: #FAF9F6;
+  z-index: 100;
+}
+body .main-body .intro {
   height: 40rem;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
 }
-.intro .pfpBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 19rem;
-}
-.intro .pfpBox .imgContainer {
-  position: relative;
+body .main-body .intro .pfpBox .imgContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.intro .pfpBox .imgContainer .containImg {
+body .main-body .intro .pfpBox .imgContainer .containImg {
   position: absolute;
-  height: 17rem;
-  width: 17rem;
+  height: 12em;
+  width: 12em;
   border-radius: 50%;
   overflow: hidden;
 }
-.intro .pfpBox .imgContainer .containImg::before {
+body .main-body .intro .pfpBox .imgContainer .containImg::before {
   content: "";
   transform: skew(45deg);
 }
-.intro .pfpBox .imgContainer .containImg .myImg {
+body .main-body .intro .pfpBox .imgContainer .containImg .myImg {
   position: absolute;
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
   object-fit: fill;
   transition: 2s ease-out;
 }
-.intro .pfpBox .imgContainer .containImg .myImg:hover {
+body .main-body .intro .pfpBox .imgContainer .containImg .myImg:hover {
   transition: 1.5s ease-in;
   scale: 2;
 }
-.intro .skills .skillCarousel {
-  position: relative;
+body .main-body .skills {
+  margin-bottom: 5rem;
 }
-.intro .skills .skillCarousel #compSkills {
+body .main-body .skills .skillCarousel #compSkills {
   height: 6em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item {
+body .main-body .skills .skillCarousel #compSkills .carousel-item {
   height: 5em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item h5, .intro .skills .skillCarousel #compSkills .carousel-item .h5 {
+body .main-body .skills .skillCarousel #compSkills .carousel-item h5, body .main-body .skills .skillCarousel #compSkills .carousel-item .h5 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-html5 {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-html5 {
   color: #ff6a00;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-css3 {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-css3 {
   color: #0061ff;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-sass {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-sass {
   color: #e52666;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-js {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-js {
   color: #f5ec00;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-node {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-node {
   color: #77bb41;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-npm {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-npm {
   color: #e32400;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-python {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-python {
   color: #0d4e90;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-react {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-react {
   color: #00c7fc;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-database {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-database {
   color: #e52666;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-github {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-github {
   color: #202426;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .carousel-item .fa-bootstrap {
+body .main-body .skills .skillCarousel #compSkills .carousel-item .fa-bootstrap {
   color: #9929bd;
   height: 3em;
 }
-.intro .skills .skillCarousel #compSkills .leftPointer {
+body .main-body .skills .skillCarousel #compSkills .leftPointer {
   position: relative;
-  left: 4em;
-  height: 2em;
-  width: 2em;
+  left: 1em;
+  height: 4em;
+  width: 4em;
   fill: #58A712;
 }
-.intro .skills .skillCarousel #compSkills .rightPointer {
+body .main-body .skills .skillCarousel #compSkills .rightPointer {
   position: relative;
-  right: 4em;
-  height: 2em;
-  width: 2em;
+  right: 1em;
+  height: 4em;
+  width: 4em;
   fill: #58A712;
 }
-
-.quoteBlock {
+body .main-body .quoteBlock {
+  margin-bottom: 5rem;
   height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.quoteBlock .quote {
+body .main-body .quoteBlock .quote {
   max-width: 650px;
   text-align: center;
 }
-.quoteBlock .quote .card {
+body .main-body .quoteBlock .quote .card {
   border-color: #58A712;
 }
-.quoteBlock .quote .card .card-header {
-  background-color: #58A712;
+body .main-body .quoteBlock .quote .card .card-header {
+  background: linear-gradient(90deg, rgb(71, 134, 22) 4%, rgb(88, 167, 18) 24%, rgb(99, 203, 52) 78%, rgb(65, 179, 79) 100%);
 }
-.quoteBlock .quote .card .card-header h4, .quoteBlock .quote .card .card-header .h4 {
+body .main-body .quoteBlock .quote .card .card-header h4, body .main-body .quoteBlock .quote .card .card-header .h4 {
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.quoteBlock .quote .card .card-body p, .quoteBlock .quote .card .card-body footer {
+body .main-body .quoteBlock .quote .card .card-body p, body .main-body .quoteBlock .quote .card .card-body footer {
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
-.bio {
+body .main-body .bio {
+  margin-bottom: 5rem;
   align-items: start;
   justify-content: center;
 }
-.bio .g-col-12, .bio .g-col-md-6 {
+body .main-body .bio .g-col-12, body .main-body .bio .g-col-md-6 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bio .g-col-12 p, .bio .g-col-md-6 p {
+body .main-body .bio .g-col-12 p, body .main-body .bio .g-col-md-6 p {
   margin: 2em;
   color: #202426;
 }
-.bio .g-col-12 p .longhorn, .bio .g-col-md-6 p .longhorn {
+body .main-body .bio .g-col-12 p .longhorn, body .main-body .bio .g-col-md-6 p .longhorn {
   color: #ff6a00;
 }
-.bio .g-col-12 p .panther, .bio .g-col-md-6 p .panther {
+body .main-body .bio .g-col-12 p .panther, body .main-body .bio .g-col-md-6 p .panther {
   color: #0061ff;
 }
-
-.thusFar :nth-child(-n+4 of .g-col-6) {
+body .main-body .thusFar {
+  margin-bottom: 7rem;
+  place-items: center;
+}
+body .main-body .thusFar :nth-child(-n+4 of .g-col-sm-6) .img-box {
+  height: auto;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  border: 0.5px solid none;
-  box-shadow: 2px 4px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #C9CC3F;
 }
-.thusFar :nth-child(-n+4 of .g-col-6) img {
+body .main-body .thusFar :nth-child(-n+4 of .g-col-sm-6) .img-box img {
+  padding: 1em;
   width: 8em;
   height: 8em;
+  border: 0.5px solid #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(67deg, rgb(200, 208, 215) 16%, rgb(240, 248, 255) 36%, rgb(238, 246, 253) 59%, rgb(200, 208, 215) 77%);
+  transition: transform 0.3s;
 }
-
-.weatherChannel {
-  width: 100%;
-  display: block;
+body .main-body .thusFar :nth-child(-n+4 of .g-col-sm-6) .img-box :hover {
+  transform: translateY(-5px);
 }
-.weatherChannel .weatherHead h3, .weatherChannel .weatherHead .h3 {
+body .main-body .weatherChannel .weatherHead h3, body .main-body .weatherChannel .weatherHead .h3 {
   font-size: 35px;
 }
-.weatherChannel .weatherHead .weatherOne {
+body .main-body .weatherChannel .weatherOne {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #00c7fc;
 }
-.weatherChannel .weatherHead .weatherOne .atl {
+body .main-body .weatherChannel .weatherOne .atl {
   margin: 1em;
   height: 9em;
   width: 9em;
@@ -11442,42 +11452,52 @@ body {
   overflow: hidden;
   background-color: #0061ff;
 }
-.weatherChannel .weatherHead .weatherOne .atl .temp {
+body .main-body .weatherChannel .weatherOne .atl .temp {
   padding: 0.25em;
   height: 3em;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #9929bd;
 }
-.weatherChannel .weatherHead .weatherOne .atl .temp .farenheit {
+body .main-body .weatherChannel .weatherOne .atl .temp #farenheit {
   height: 3em;
   width: 3em;
   background-color: #ff6a00;
 }
-.weatherChannel .weatherHead .weatherOne .atl .temp .celcius {
+body .main-body .weatherChannel .weatherOne .atl .temp #celcius {
   height: 2em;
   width: 2em;
   background-color: #f5ec00;
 }
-.weatherChannel .weatherHead .weatherOne .atl .weather {
-  padding: 0.25em;
-  height: 3em;
-  overflow: hidden;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  background-color: #d7dfc5;
-}
-.weatherChannel .weatherHead .weatherOne .atl .location {
+body .main-body .weatherChannel .weatherOne .atl .weather {
   padding: 0.25em;
   height: 3em;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  background-color: #d7dfc5;
+}
+body .main-body .weatherChannel .weatherOne .atl .weather #weatherPic {
+  height: 3em;
+  width: 5em;
+  background-color: #0061ff;
+}
+body .main-body .weatherChannel .weatherOne .atl .location {
+  padding: 0.25em;
+  height: 3em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   background-color: #e32400;
+}
+body .main-body .weatherChannel .weatherOne .atl .location #locale {
+  height: 2em;
+  width: 6em;
+  background-color: #abdd30;
 }
 
 .htmlFive {

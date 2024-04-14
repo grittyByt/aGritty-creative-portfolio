@@ -5,6 +5,10 @@
 $enable-grid-classes: false;
 $enable-cssgrid: true;
 
+// transition-property - transform, etc.
+// transition-duration - secs or milisecs
+// transition-timing-function - ease, ease-in, ease-out, ease-in-out, linear
+// transition-delay
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -21,122 +25,118 @@ $enable-cssgrid: true;
 
 body {
     height: 100vh;
-}
-
-// header {
-//     position: absolute;
-// }
-
-.navbar {
-    position: fixed;
-    background-color: $primary;
-    width: 100%;
-    z-index: 200;
-
-    .navbar-nav {
-    
+    background-color: $platinum;
+    header {
+        position: fixed;
         width: 100%;
-        justify-content: end;
-    }
-    
-    .main-logo {
-        height: auto;
-        width: 7em;
-    }
-    
-    .navbar-toggler-icon {
-        fill: #ffffff;
+        z-index: 200;
+        background: linear-gradient(90deg, rgba(71,134,22,1) 4%, rgba(88,167,18,1) 24%, rgba(99,203,52,1) 78%, rgba(65,179,79,1) 100%);
+        .navbar {
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
-    }
-    
-    
-    .nav-link {
-        display: inline-block;
-        flex-wrap: nowrap;
-        color: #ffffff;
-    }
-    
-    
-    // sets the marigin right for the last tab in the navbar
-    .nav-item:nth-child(4) {
-        margin-right: 3rem;
-        
-    }
-}
-
-
-.intro {
-    height: 40rem;
-    align-items: center;
-    justify-content: center;
-
-    .pfpBox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 19rem;
-
-        .imgContainer {
-            position: relative;
-            // height: 19rem;
-            // width: 100%;
-            // background-color: #6e6464;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            .navbar-nav {        
+                width: 100%;
+                justify-content: end;
+            }
             
-        
-            // animation: name duration timing-function delay iteration-count direction fill-mode;
-            .containImg {
-                position: absolute;
-                height: 17rem;
-                width: 17rem;
-                border-radius: 50%;
-                overflow: hidden;
+            .main-logo {
+                height: auto;
+                width: 7em;
+            }
             
-                &::before {
-                    content: '';
-                    
-                    transform: skew(45deg);
-                }
+            .navbar-toggler-icon {
+                fill: #ffffff;
+                
+            }
             
-                .myImg {
-                    position: absolute;
-                    height: 20em;
-                    width: 20em;
-                    object-fit: fill;
-                    transition: 2s ease-out;
-                    &:hover {
-                        transition: 1.5s ease-in;
-                        scale: 2;
-                    }
-                }
+            
+            .nav-link {
+                display: inline-block;
+                flex-wrap: nowrap;
+                color: #ffffff;
+                transition: transform 0.3s ease-out, color 0.2s ease-in;
+            }
+            
+            .nav-link:hover {
+                transform: translateY(-5px);
+                color: $mango;
+            }
+            
+            // sets the marigin right for the last tab in the navbar
+            .nav-item:nth-child(4) {
+                margin-right: 3rem;
+                
             }
         }
     }
-    
-    
-    
-    .skills {
-        // margin-bottom: 7rem;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-    
-        .skillCarousel {
-            position: relative;
-            // top: 1rem;
-            // background-color: $mr-popo;
+    .main-body {
+        max-width: 80%;
+        border: 1px solid $platinum;
+        background-color: $off-white;
+        z-index: 100;
+        .intro {
+            height: 40rem;
+            place-items: center;
         
-            #compSkills {
-                // background-color: #6e6464;
-                height: 6em;
-                // width: 52em;
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // background-color: brown;
+            .pfpBox {
+               
         
+                .imgContainer {
+                    // position: relative;
+                    // height: 19rem;
+                    // width: 100%;
+                    // background-color: #6e6464;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                
+                    // animation: name duration timing-function delay iteration-count direction fill-mode;
+                    .containImg {
+                        position: absolute;
+                        height: 12em;
+                        width: 12em;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    
+                        &::before {
+                            content: '';
+                            
+                            transform: skew(45deg);
+                        }
+                        .myImg {
+                            position: absolute;
+                            height: 15em;
+                            width: 15em;
+                            object-fit: fill;
+                            transition: 2s ease-out;
+                            &:hover {
+                                transition: 1.5s ease-in;
+                                scale: 2;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+            
+            
+            
+            
+        }
+        
+        .skills {
+            margin-bottom: 5rem;
+        
+            .skillCarousel {
+                
+            
+                #compSkills {
+                    
+                    height: 6em;
+                   
+            
                     // .carousel-fade .carousel-item {
                     //     opacity: 0;
                     //     transition-duration: 0.25s;
@@ -235,226 +235,226 @@ body {
                     // }
                     .leftPointer {
                         position: relative;
-                        left: 4em;
-                        height: 2em;
-                        width: 2em;
+                        left: 1em;
+                        height: 4em;
+                        width: 4em;
                         fill: $primary;
-                  
+                    
                     }
                 
                     .rightPointer {
                         position: relative;
-                        right: 4em;
-                        height: 2em;
-                        width: 2em;
+                        right: 1em;
+                        height: 4em;
+                        width: 4em;
                         fill: $primary;
                     }
-            }
-        }
-        
-    }
-    
-}
-
-.quoteBlock {
-    height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    .quote {
-        max-width: 650px;  
-        text-align: center;
-        .card {
-            border-color: $primary;
-    
-    
-            .card-header {
-                background-color: $primary;
-    
-                h4 {
-                    font-family: "Handlee", cursive;
-                    font-weight: 400;
-                    font-style: normal;
                 }
             }
-    
-            .card-body {
-                p, footer {
-                    font-family: "Handlee", cursive;
-                    font-weight: 400;
-                    font-style: normal;
-                }
-            }
-        }
-    }
-}
-.bio {
-    
-    align-items: start;
-    justify-content: center;
-
-    .g-col-12, .g-col-md-6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            margin: 2em;
-            // margin-left: 5em;
-            // max-width: 45rem;
-            color: $mr-popo;
             
-    
-            .longhorn {
-                color: $naruto;
-            }
-            
-            .panther {
-                color: $vegeta;
-            }
         }
-    }
-   
 
-
-    
-}
-
-.thusFar {
-   
-    
-    
-    :nth-child(-n + 4 of .g-col-6) {
-        // margin: 1em;
-        // padding: 2em;
-        // height: 7em;
-        // width: 7em;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-        border: 0.5px solid none;
-        box-shadow: 2px 4px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: $pear;
-
-        img {
-            // position: inherit;
-            // bottom: 5em;
-            width: 8em;
-            height: 8em;
-        }
-    }
-
-    // :nth-child(-n + 4 of .g-col-md-3) {
-    //     margin: 2em;
-    //     padding: 2em;
-    //     display: none;
-    //     align-items: center;
-    //     justify-content: center;
-    //     border-radius: 8px;
-    //     border: 2px solid $island-green;
-    //     background-color: $sasuke;
-
-    //     img {
-    //         width: 4em;
-    //         height: 4em;
-    //     }
-    // }
-
-    // .g-col-md-3 {
-        
-    //     // background-color: $rock-lee;
-
-    //     img {
-    //         position: inherit;
-    //         // bottom: 5em;
-    //         width: 10em;
-    //         height: 7em;
-    //     }
-    // }
-
-    
-
-}
-.weatherChannel {
-    width: 100%;
-    display: block;
-
-    .weatherHead {
-        h3 {
-            font-size: 35px;
-        }
-        
-        .weatherOne {
-            width: 100%;
+        .quoteBlock {
+            margin-bottom: 5rem;
+            height: 25rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: $jimbei;
-            // .g-col-md-3 {
-                // margin: 1em;
-                // height: 11em;
-                // width: 11em;
-                // border-radius: 12px;
-                // background-color: $vegeta;
-            // }
-
-            .atl {
-                margin: 1em;
-                height: 9em;
-                width: 9em;
-                border-radius: 12px;
-                overflow: hidden;
-                background-color: $vegeta;
-
-                .temp {
-                    padding: 0.25em;
-                    height: 3em;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $barney;
-
-                    .farenheit {
-                        height: 3em;
-                        width: 3em;
-                        background-color: $naruto;
+            
+            
+            .quote {
+                max-width: 650px;  
+                text-align: center;
+                .card {
+                    border-color: $primary;
+            
+            
+                    .card-header {
+                        background: linear-gradient(90deg, rgba(71,134,22,1) 4%, rgba(88,167,18,1) 24%, rgba(99,203,52,1) 78%, rgba(65,179,79,1) 100%);
+            
+                        h4 {
+                            font-family: "Handlee", cursive;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
                     }
-
-                    .celcius {
-                        height: 2em;
-                        width: 2em;
-                        background-color: $tweety;
+            
+                    .card-body {
+                        p, footer {
+                            font-family: "Handlee", cursive;
+                            font-weight: 400;
+                            font-style: normal;
+                        }
                     }
-                }
-
-                .weather {
-                    padding: 0.25em;
-                    height: 3em;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: start;
-                    justify-content: center;
-                    background-color: $bulbasaur;
-                }
-                .location {
-                    padding: 0.25em;
-                    height: 3em;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $sasuke;
                 }
             }
         }
+        .bio {
+            margin-bottom: 5rem;
+            align-items: start;
+            justify-content: center;
+        
+            .g-col-12, .g-col-md-6 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                p {
+                    margin: 2em;
+                    // margin-left: 5em;
+                    // max-width: 45rem;
+                    color: $mr-popo;
+                    
+            
+                    .longhorn {
+                        color: $naruto;
+                    }
+                    
+                    .panther {
+                        color: $vegeta;
+                    }
+                }
+            }
+           
+        
+        
+            
+        }
 
+        .thusFar {
+            margin-bottom: 7rem;
+            place-items: center;
+    
+    
+            :nth-child(-n + 4 of .g-col-sm-6) {                
+                
+                .img-box {
+                    height: auto;
+                    width: auto;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+
+                    img {
+                        padding: 1em;
+                        width: 8em;
+                        height: 8em;
+                        border: 0.5px solid #f0f8ff;
+                        border-radius: 15px;
+                        box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        background: linear-gradient(67deg, rgba(200,208,215,1) 16%, rgba(240,248,255,1) 36%, rgba(238,246,253,1) 59%, rgba(200,208,215,1) 77%);
+                        transition: transform 0.3s;
+                    }
+                    
+                    :hover {
+                        transform: translateY(-5px);
+                    }
+                    
+                }
+                
+                
+            }
+                     
+         
+            
+        }
+        .weatherChannel {
+            // display: block;
+        
+            .weatherHead {
+                h3 {
+                    font-size: 35px;
+                }
+                
+        
+            }
+            .weatherOne {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $jimbei;
+                // .g-col-md-3 {
+                    // margin: 1em;
+                    // height: 11em;
+                    // width: 11em;
+                    // border-radius: 12px;
+                    // background-color: $vegeta;
+                // }
+    
+                .atl {
+                    margin: 1em;
+                    height: 9em;
+                    width: 9em;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    background-color: $vegeta;
+    
+                    .temp {
+                        padding: 0.25em;
+                        height: 3em;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        background-color: $barney;
+    
+                        #farenheit {
+                            height: 3em;
+                            width: 3em;
+                            background-color: $naruto;
+                        }
+    
+                        #celcius {
+                            height: 2em;
+                            width: 2em;
+                            background-color: $tweety;
+                        }
+                    }
+    
+                    .weather {
+                        padding: 0.25em;
+                        height: 3em;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        background-color: $bulbasaur;
+
+                        #weatherPic {
+                            height: 3em;
+                            width: 5em;
+                            background-color: $vegeta;
+                        }
+                    }
+
+                    .location {
+                        padding: 0.25em;
+                        height: 3em;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        background-color: $sasuke;
+
+                        #locale {
+                            height: 2em;
+                            width: 6em;
+                            background-color: $island-green;
+                        }
+                    }
+                }
+            }
+        
+        }
     }
-
+    
 }
+
+
+
+
 
 
 .htmlFive {

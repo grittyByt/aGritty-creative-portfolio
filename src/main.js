@@ -1,9 +1,5 @@
-// const myCarouselElement = document.querySelector('#myCarousel')
+require('dotenv').config();
 
-// const carousel = new bootstrap.Carousel(myCarouselElement, {
-//   interval: 2000,
-//   touch: false
-// })
 // quote block
 const quoteArea = document.querySelector('#quoteOfDay');
 const authorArea = document.querySelector('#quoteAuthor');
@@ -230,6 +226,7 @@ function disappearQuote(){
 }
 
 // weather block
+
 const far = document.querySelector('#farenheit');
 const cel = document.querySelector('#celsius');
 const far2 = document.querySelector('#farenheit2');
@@ -258,7 +255,7 @@ const weather6 = document.querySelector('#weatherPic6');
 const localCity6 = document.querySelector('#locale6');
 const weather7 = document.querySelector('#weatherPic7');
 const localCity7 = document.querySelector('#locale7');
-const apiKey = '3f292830be446a909469c4757fe81478';
+const apiKey = process.env.API_KEY;
 const cities = ['Atlanta','Phoenix','Manhattan','Dillon', 'Tampa', 4473083, 'Okinawa']
 const cache = new Map();
 // async function getWeatherData(city) {

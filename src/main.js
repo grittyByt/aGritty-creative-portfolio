@@ -1,4 +1,6 @@
-require('dotenv').config();
+// import dotenv from 'dotenv'; // Import dotenv
+// dotenv.config();
+// console.log(`You are using Node.js version: ${process.version}`);
 
 // quote block
 const quoteArea = document.querySelector('#quoteOfDay');
@@ -255,7 +257,9 @@ const weather6 = document.querySelector('#weatherPic6');
 const localCity6 = document.querySelector('#locale6');
 const weather7 = document.querySelector('#weatherPic7');
 const localCity7 = document.querySelector('#locale7');
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
+const config = require('./config.json');
+const apiKey = config.apiKey;
 const cities = ['Atlanta','Phoenix','Manhattan','Dillon', 'Tampa', 4473083, 'Okinawa']
 const cache = new Map();
 // async function getWeatherData(city) {

@@ -170,8 +170,11 @@
   --bs-heading-color: inherit;
   --bs-link-color: rgb(154.8, 202.2, 112.8);
   --bs-link-hover-color: rgb(174.84, 212.76, 141.24);
+  --bs-link-color: rgb(154.8, 202.2, 112.8);
+  --bs-link-hover-color: rgb(174.84, 212.76, 141.24);
   --bs-link-color-rgb: 155, 202, 113;
   --bs-link-hover-color-rgb: 175, 213, 141;
+  --bs-code-color: rgb(230.4, 132.6, 181.2);
   --bs-code-color: rgb(230.4, 132.6, 181.2);
   --bs-border-color: #495057;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
@@ -1350,9 +1353,14 @@ progress {
   --bs-table-bg: rgb(255, 242.6, 205.4);
   --bs-table-border-color: rgb(229.5, 218.34, 184.86);
   --bs-table-striped-bg: rgb(242.25, 230.47, 195.13);
+  --bs-table-bg: rgb(255, 242.6, 205.4);
+  --bs-table-border-color: rgb(229.5, 218.34, 184.86);
+  --bs-table-striped-bg: rgb(242.25, 230.47, 195.13);
   --bs-table-striped-color: #000;
   --bs-table-active-bg: rgb(229.5, 218.34, 184.86);
+  --bs-table-active-bg: rgb(229.5, 218.34, 184.86);
   --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgb(235.875, 224.405, 189.995);
   --bs-table-hover-bg: rgb(235.875, 224.405, 189.995);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
@@ -1364,9 +1372,14 @@ progress {
   --bs-table-bg: rgb(248, 214.6, 217.8);
   --bs-table-border-color: rgb(223.2, 193.14, 196.02);
   --bs-table-striped-bg: rgb(235.6, 203.87, 206.91);
+  --bs-table-bg: rgb(248, 214.6, 217.8);
+  --bs-table-border-color: rgb(223.2, 193.14, 196.02);
+  --bs-table-striped-bg: rgb(235.6, 203.87, 206.91);
   --bs-table-striped-color: #000;
   --bs-table-active-bg: rgb(223.2, 193.14, 196.02);
+  --bs-table-active-bg: rgb(223.2, 193.14, 196.02);
   --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgb(229.4, 198.505, 201.465);
   --bs-table-hover-bg: rgb(229.4, 198.505, 201.465);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
@@ -1378,9 +1391,13 @@ progress {
   --bs-table-bg: #f8f9fa;
   --bs-table-border-color: rgb(223.2, 224.1, 225);
   --bs-table-striped-bg: rgb(235.6, 236.55, 237.5);
+  --bs-table-border-color: rgb(223.2, 224.1, 225);
+  --bs-table-striped-bg: rgb(235.6, 236.55, 237.5);
   --bs-table-striped-color: #000;
   --bs-table-active-bg: rgb(223.2, 224.1, 225);
+  --bs-table-active-bg: rgb(223.2, 224.1, 225);
   --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgb(229.4, 230.325, 231.25);
   --bs-table-hover-bg: rgb(229.4, 230.325, 231.25);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
@@ -1392,9 +1409,13 @@ progress {
   --bs-table-bg: #212529;
   --bs-table-border-color: rgb(55.2, 58.8, 62.4);
   --bs-table-striped-bg: rgb(44.1, 47.9, 51.7);
+  --bs-table-border-color: rgb(55.2, 58.8, 62.4);
+  --bs-table-striped-bg: rgb(44.1, 47.9, 51.7);
   --bs-table-striped-color: #fff;
   --bs-table-active-bg: rgb(55.2, 58.8, 62.4);
+  --bs-table-active-bg: rgb(55.2, 58.8, 62.4);
   --bs-table-active-color: #fff;
+  --bs-table-hover-bg: rgb(49.65, 53.35, 57.05);
   --bs-table-hover-bg: rgb(49.65, 53.35, 57.05);
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
@@ -1497,6 +1518,7 @@ progress {
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
+  border-color: rgb(171.5, 211, 136.5);
   border-color: rgb(171.5, 211, 136.5);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(88, 167, 18, 0.25);
@@ -1649,6 +1671,7 @@ textarea.form-control-lg {
 }
 .form-select:focus {
   border-color: rgb(171.5, 211, 136.5);
+  border-color: rgb(171.5, 211, 136.5);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(88, 167, 18, 0.25);
 }
@@ -1735,6 +1758,7 @@ textarea.form-control-lg {
 }
 .form-check-input:focus {
   border-color: rgb(171.5, 211, 136.5);
+  border-color: rgb(171.5, 211, 136.5);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(88, 167, 18, 0.25);
 }
@@ -1781,6 +1805,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb%28171.5, 211, 136.5%29'/%3e%3c/svg%3e");
   --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb%28171.5, 211, 136.5%29'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
@@ -1857,6 +1882,7 @@ textarea.form-control-lg {
 }
 .form-range::-webkit-slider-thumb:active {
   background-color: rgb(204.9, 228.6, 183.9);
+  background-color: rgb(204.9, 228.6, 183.9);
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -1885,6 +1911,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
+  background-color: rgb(204.9, 228.6, 183.9);
   background-color: rgb(204.9, 228.6, 183.9);
 }
 .form-range::-moz-range-track {
@@ -1948,7 +1975,7 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder), .form-floating > .form-control-plaintext:not(:-moz-placeholder) {
+.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -1967,7 +1994,7 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-moz-placeholder) ~ label {
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -1978,7 +2005,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:not(:-moz-placeholder) ~ label::after {
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
   position: absolute;
   inset: 1rem 0.375rem;
   z-index: -1;
